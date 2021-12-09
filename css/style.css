@@ -1,4 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    font-size: 0;
     margin: 0;
     font-family: Arial, sans-serif;
 }
@@ -15,6 +21,7 @@ h1 {
     font-weight: 700;
     font-family: "Roboto Slab";
     text-align: center;
+    
 }
 
 h2 {
@@ -24,34 +31,56 @@ h2 {
     font-weight: 700;
     font-family: "Roboto";
     text-transform: uppercase;
+    margin-bottom: 28px;
 }
 
-.easyform {
-    max-width: 330px;
+form {
+    width: 330px;
     border-color: #cccccc;
 
 }
 
-.text {
-    width: 330px;
-    height: 42px;
+input[type=text] {
+    padding:14px 0;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #cccccc;
 }
 
-.list {
+input[type=text]:focus {
+    border: none
+}
+
+select {
+    padding:14px 0;
+    margin-bottom: 15px ;
     font-size: 14px;
     color: #1f222c;
     font-weight: 400;
     font-family: "Roboto";
-    width: 338px;
-    height: 42px;
+    width: 100%;
+    border-color: #cccccc;
+}
+
+textarea {
+    margin-bottom: 15px;
+    border-color: #cccccc;
+    width: 100%;
 }
 
 .button {
     background-color: #12d661;
     padding: 13px 115px;
     font-size: 14px;
-    color: #ffffff;
+    color: #fff;
     font-weight: 700;
     font-family: "Roboto";
-    text-align: center;
+    border: none;
+    border-radius: 3px;
+}
+
+.button:hover {
+    background-color: #07be51;
 }
