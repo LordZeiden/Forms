@@ -21,7 +21,7 @@ h1 {
     font-weight: 700;
     font-family: "Roboto Slab";
     text-align: center;
-    
+
 }
 
 h2 {
@@ -41,7 +41,7 @@ form {
 }
 
 input[type=text] {
-    padding:14px 0;
+    padding: 14px 17px;
     box-sizing: border-box;
     display: block;
     margin-bottom: 15px;
@@ -49,13 +49,11 @@ input[type=text] {
     border: 1px solid #cccccc;
 }
 
-input[type=text]:focus {
-    border: none
-}
-
 select {
-    padding:14px 0;
-    margin-bottom: 15px ;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 14px 11px;
+    margin-bottom: 15px;
     font-size: 14px;
     color: #1f222c;
     font-weight: 400;
@@ -65,6 +63,7 @@ select {
 }
 
 textarea {
+    box-sizing: border-box;
     margin-bottom: 15px;
     border-color: #cccccc;
     width: 100%;
@@ -82,5 +81,6 @@ textarea {
 }
 
 .button:hover {
+    box-sizing: border-box;
     background-color: #07be51;
 }
